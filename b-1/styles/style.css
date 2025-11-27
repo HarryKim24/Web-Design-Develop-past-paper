@@ -37,6 +37,7 @@ a {
 #header {
   width: 100%;
   height: 100px;
+  background-color: darkblue;
 }
 #header .logo {
   position: absolute;
@@ -263,12 +264,12 @@ a {
 #footer {
   width: 100%;
   height: 100px;
+  background-color: skyblue;
 }
 #footer .inner {
   margin: 0 auto;
   width: 1200px;
   display: flex;
-  background-color: skyblue;
 }
 #footer .inner .logo {
   width: 200px;
