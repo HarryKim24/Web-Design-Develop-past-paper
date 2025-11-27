@@ -1,0 +1,301 @@
+@charset "utf-8";
+* {padding: 0; margin: 0; box-sizing: border-box;}
+body {
+  background-color: #fff;
+  color: #333333;
+}
+li {list-style: none;}
+a {text-decoration: none; color: #333333;}
+
+#wrap {
+  width: 1000px;
+  height: 650px;
+  display: flex;
+  position: relative;
+}
+
+#header {
+  width: 200px;
+  height: 100%;
+  background-color: #333333;
+}
+#header .logo {
+  width: 100%;
+  height: 100px;
+  background-color: midnightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .nav {
+  margin: 20px;
+  background-color: yellow;
+}
+#header .nav > ul > li {
+  position: relative;
+}
+#header .nav > ul > li > a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+#header .nav > ul > li:hover > a {
+  background-color: yellowgreen;
+}
+#header .nav > ul > li > ul {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .7s ease;
+}
+#header .nav > ul > li > ul > li {
+  width: 100%;
+  text-align: center;
+}
+#header .nav > ul > li > ul > li > a {
+  display: block;
+  padding: 10px;
+  background-color: midnightblue;
+  color: #fff;
+}
+#header .nav > ul > li > ul > li > a:hover {
+  background-color: mediumblue
+}
+
+#main {
+  width: 800px;
+  height: 650px;
+}
+#main .slider {
+  width: 800px;
+  height: 350px;
+  position: relative;
+}
+#main .slider .slide {
+  position: absolute;
+  width: 800px;
+  height: 350px;
+  transition: 1s ease;
+}
+#main .slider .slide.s1 {
+  background-image: url('/c-1/images/s1.jpg');
+}
+#main .slider .slide.s2 {
+  background-image: url('/c-1/images/s2.jpg');
+}
+#main .slider .slide.s3 {
+  background-image: url('/c-1/images/s3.jpg');
+}
+#main .slider .slide span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(25, 25, 112, .4);
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+#main .contents {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.contents .notion-gallery {
+  width: 33.3333%;
+  height: 200px;
+  background-color: yellow;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.notion-gallery .buttons {
+  display: flex;
+  padding-left: 10px;
+}
+.notion-gallery .buttons button {
+  cursor: pointer;
+  width: 80px;
+  border: none;
+  background-color: midnightblue;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+  font-weight: bold;
+
+}
+.notion-gallery .text-image {
+  flex: 1;
+  padding: 10px;
+  background-color: yellowgreen;
+  display: flex;
+}
+.notion-gallery .text-image .text div span {
+  color: #333333;
+  font-size: 14px;
+}
+.notion-gallery .text-image .text div a:hover {
+  text-decoration: underline;
+}
+.notion-gallery .text-image .images {
+  display: none;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.notion-gallery .text-image .images img {
+  width: 70px;
+  height: 70px;
+}
+
+.contents .banner {
+  width: 33.3333%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+
+}
+.contents .banner h2 {
+  font-size: 20px;
+  padding: 5px;
+  background-color: yellow;
+}
+.banner .image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: midnightblue;
+}
+.banner .image img {
+  width: 160px;
+  border-radius: 20px;
+}
+.banner .image span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: yellow;
+}
+
+.contents .go {
+  width: 33.3333%;
+  height: 200px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+.go h2 {
+  font-size: 20px;
+  padding: 5px;
+}
+.go .go-boxes {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.go .go-boxes .go-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: midnightblue;
+  padding: 5px;
+  gap: 5px;
+  border-radius: 20px;
+}
+.go .go-boxes .go-box img {
+  width: 30px;
+  height: 30px;
+}
+.go .go-boxes .go-box span a {
+  color: yellow;
+}
+
+#footer {
+  width: 800px;
+  height: 100px;
+  background-color: yellowgreen;
+  display: flex;
+}
+#footer .logo {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footer2 {
+  width: 600px;
+  height: 100px;
+}
+#footer .footer2 .menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#footer .footer2 .menu div a:hover {
+  text-decoration: underline;
+}
+#footer .footer2 .copyright {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.popup {
+  display: none;
+
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: midnightblue;
+  z-index: 10000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 20px;
+
+  flex-direction: column;
+}
+
+.popup .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup .button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.popup .button button {
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: yellow;
+}
+
+.popup .button button:hover {
+  background-color: yellowgreen;
+}
