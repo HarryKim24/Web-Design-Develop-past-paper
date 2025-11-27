@@ -137,7 +137,6 @@ a {
   border-radius: 20px;
 }
 
-
 #contents {
   margin: 0 auto;
   width: 1200px;
@@ -194,32 +193,72 @@ a {
   width: 33.3333%;
   height: 200px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  background-color: skyblue;
+  flex-direction: column;
+  padding: 10px 20px;
 }
-#contents .banner div img {
-  width: 50px;
-  height: 50px;
+.banner h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-#contents .banner div span {
+
+.banner .image {
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+.banner .image .text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.banner .image .text h3 {
+  color: aqua;
+}
+.banner .image .text p {
+  color: aqua;
+}
+
+.banner img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  text-align: center;
 }
 
 #contents .go {
   width: 33.3333%;
   height: 200px;
   background-color: skyblue;
+  padding: 10px;
+}
+.go h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+#contents .go .go-items {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#contents .go .text {
-  font-size: 20px;
+  gap: 20px;
 }
 
+#contents .go .go-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contents .go .go-item img {
+  width: 50px;
+  height: 50px;
+}
+
+#contents .go .go-item span {
+  display: block;
+  text-align: center;
+}
 
 #footer {
   width: 100%;
